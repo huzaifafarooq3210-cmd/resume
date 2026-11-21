@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huzaifa Farooq | Resume</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        /* Navigation */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0;
+            border-bottom: 1px solid #263247;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+
+        .hero {
+            padding: 100px 0 80px;
+        }
+
+        .hero-tag {
+            color: #38bdf8;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 7vw, 65px);
+            line-height: 1.15;
+            margin: 20px 0;
+            color: white;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #94a3b8;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0b1120;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 700;
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+        }
+
+        .btn-outline:hover {
+            background: #38bdf8;
+            color: #0b1120;
+        }
+
+        /* Sections */
+
+        section {
+            padding: 65px 0;
+            border-top: 1px solid #263247;
+        }
+
+        .section-title {
+            font-size: 30px;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .section-title span {
+            color: #38bdf8;
+        }
+
+        .about-text {
+            color: #94a3b8;
+            max-width: 800px;
+        }
+
+        /* Cards */
+
+        .card {
+            background: #141e30;
+            border: 1px solid #263247;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #38bdf8;
+            transform: translateY(-4px);
+        }
+
+        .card h3 {
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .card .date {
+            color: #38bdf8;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        /* Skills */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #141e30;
+            border: 1px solid #263247;
+            padding: 10px 18px;
+            border-radius: 6px;
+            color: #bae6fd;
+            font-size: 14px;
+        }
+
+        /* Contact */
+
+        .contact-text {
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            border-top: 1px solid #263247;
+            font-size: 13px;
+        }
+
+        /* Mobile */
+
+        @media(max-width: 650px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            section {
+                padding: 45px 0;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: #222;
+            }
+
+            nav, footer, .btn {
+                display: none;
+            }
+
+            .hero h1, .section-title, .card h3 {
+                color: #111;
+            }
+
+            .card {
+                background: white;
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navigation -->
+
+        <nav>
+            <div class="logo">HF.</div>
+
+            <div>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+
+        <header class="hero">
+            <div class="hero-tag">HELLO, WELCOME TO MY RESUME</div>
+
+            <h1>
+                I'm Huzaifa<br>
+                <span>Farooq.</span>
+            </h1>
+
+            <p>
+                BBIT Student at the University of Engineering
+                and Technology, Lahore. Interested in
+                technology, artificial intelligence, business
+                intelligence and software development.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+
+            <button onclick="window.print()" class="btn btn-outline">
+                Download Resume
+            </button>
+        </header>
+
+        <!-- About -->
+
+        <section id="about">
+            <h2 class="section-title">About <span>Me</span></h2>
+
+            <p class="about-text">
+                I am a 7th-semester Bachelor of Business and
+                Information Technology student at UET Lahore.
+
+                I have an interest in combining business
+                knowledge with modern technology to solve
+                real-world problems.
+
+                I am continuously developing my technical,
+                analytical and problem-solving skills.
+            </p>
+        </section>
+
+        <!-- Education -->
+
+        <section id="education">
+            <h2 class="section-title">My <span>Education</span></h2>
+
+            <div class="card">
+                <h3>Bachelor of Business and Information Technology</h3>
+                <div class="date">2023 – Expected June 2027</div>
+                <p>
+                    University of Engineering and Technology (UET),
+                    Lahore, Pakistan.
+                </p>
+                <p>CGPA: 3.10</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+
+        <section id="skills">
+            <h2 class="section-title">My <span>Skills</span></h2>
+
+            <div class="skills">
+                <div class="skill">Microsoft Excel (Advanced)</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript (Learning)</div>
+                <div class="skill">Python (Learning)</div>
+                <div class="skill">Artificial Intelligence</div>
+                <div class="skill">Cloud Computing</div>
+                <div class="skill">Business Analysis</div>
+                <div class="skill">Problem Solving</div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+
+        <section id="projects">
+            <h2 class="section-title">My <span>Projects</span></h2>
+
+            <div class="card">
+                <h3>AI & Technology Learning Projects</h3>
+                <p>
+                    Exploring artificial intelligence,
+                    Python programming and modern technology
+                    through practical learning exercises.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Web Development Practice</h3>
+                <p>
+                    Developing frontend development skills
+                    using HTML, CSS and JavaScript.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Business & Data Analysis</h3>
+                <p>
+                    Applying business concepts and Excel
+                    skills to understand and analyse data.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience -->
+
+        <section id="experience">
+            <h2 class="section-title">My <span>Experience</span></h2>
+
+            <div class="card">
+                <h3>Professional Experience</h3>
+                <p>
+                    No formal employment experience listed.
+                    Currently focusing on academic development,
+                    technical learning and practical projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+
+        <section id="contact">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+
+            <p class="contact-text">
+                I'm open to learning opportunities,
+                internships and professional connections.
+            </p>
+
+            <p>Email: your-email@example.com</p>
+            <p>Location: Lahore, Pakistan</p>
+            <p>LinkedIn: Add your LinkedIn profile</p>
+
+        </section>
+
+    </div>
+
+    <footer>
+        © 2026 Huzaifa Farooq. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
